@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Program Committee</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/logo_and_menu.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #eef1f5;
+        }
+        
+        .header-title {
+            font-weight: 700;
+            color: #1f2a44;
+        }
+        
+        .sub-text {
+            color: #6c757d;
+        }
+        
+        .table-header {
+            background-color: #ff6a2a;
+            color: #fff;
+            font-weight: 600;
+            padding: 12px;
+        }
+        
+        .nav-pills .nav-link {
+            background-color: #1c2541;
+            color: #fff;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            padding: 14px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .nav-pills .nav-link.active {
+            background-color: blue;
+            color: yellow;
+            font-weight: bold;
+        }
+        
+        .member-list {
+            max-height: 260px;
+            overflow-y: auto;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        
+        .member-item {
+            background: lightgray;
+            font-weight: bold;
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        /* Optional: improve small screen usability */
+        
+        @media (max-width: 576px) {
+            .nav-pills .nav-link {
+                font-size: 12px;
+                padding: 10px;
+            }
+            .member-item {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- ?? NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">IC3IA 2026</a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Committee</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="committee.html#intLinkOC">Organizing Committee</a></li>
+                            <li><a class="dropdown-item" href="committee.html#intLinkTPC">Technical Program Committee</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CFP Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button">CFP</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#intLinkDateAndGuide">Dates and Guidelines</a></li>
+                            <li><a class="dropdown-item" href="index.html#intLinkReviewProcess">Review Process</a></li>
+                            <li><a class="dropdown-item" href="conference.html">Conference Tracks</a></li>
+                            <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="paperSubmission.html">Paper Submission</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foot">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tc.html">T & C</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner d-flex align-items-center text-center text-white" id="intLinkOC">
+        <div class="container">
+            <h1 class="display-1 fw-bold">Committee </h1>
+        </div>
+    </div>
+
+
+
+    <div class="container py-4">
+
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <h1 class="header-title">Organizing Committee</h1>
+            <p class="sub-text">Meet our esteemed Organizing Program Committee members.</p>
+        </div>
+
+        <!-- Header Row -->
+        <div class="row text-center mb-3">
+            <div class="col-4 table-header">Role</div>
+            <div class="col-8 table-header">Members</div>
+        </div>
+
+        <div class="row">
+
+            <!-- LEFT: Roles -->
+            <div class="col-4">
+                <div class="nav flex-column nav-pills">
+
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#general_chairs">
+                        General Chair
+                    </button>
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#program_chairs">
+                        Program Chair
+                    </button>
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#conference_chairs">
+                        Conference Chair
+                    </button>
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#conference_cochairs">
+                        Conference Co-Chair
+                    </button>
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#proceeding_chairs">
+                        Proceeding Chair
+                    </button>
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#publicity_chairs">
+                        Publicity Chair
+                    </button>
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#organizing_chairs" id="intLinkTPC">
+                        Organizing Chair
+                    </button>
+                </div>
+            </div>
+
+            <!-- RIGHT: Members -->
+            <div class="col-8">
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="general_chairs">
+                        <div class="member-list">
+                            <div class="member-item">Prof. Rajesh Kumar, MNIT, Jaipur, India</div>
+                            <div class="member-item">Prof. Raj Sandu, Australian Institute of Business Intelligence, Sydney, Australia </div>
+                            <div class="member-item">Dr. Manoj Kuri, Engineering College Bikaner, India</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="program_chairs">
+                        <div class="member-list">
+                            <div class="member-item">Dr. Jyoti Gajrani, Engineering College, Ajmer, India</div>
+                            <div class="member-item">Dr. Ajay Choudhary, Engineering College Bikaner, India</div>
+                            <div class="member-item">Dr. Padma Joshi, Shri Jain PG Gilrs College, Bikaner, India</div>
+                            <div class="member-item">Nur Aeni, Universitas Negeri Makassar, Indonesia</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="conference_chairs">
+                        <div class="member-list">
+                            <div class="member-item">Dr. Avnish Bora, Jodhpur Institute of Engineering and Technology, Jodhpur, India</div>
+                            <div class="member-item">Dr. Amit Singla, SD Bihani PG College, SriGanganagar</div>
+                            <div class="member-item">Dr. Sonia Arora, Noida Institute of Engineering And Technology, Greater Noida, India</div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="conference_cochairs">
+                        <div class="member-list">
+                            <div class="member-item">Dr. Nirav Mehta, Parul University, Vadodara, India</div>
+                            <div class="member-item">Dr. Zalak Thakrar, School of Open Learning, National Forensic Science University(NFSU) Gandhinagar</div>
+                            <div class="member-item">Dr Pratibha Peshwa Swami, Jodhpur Institute of Engineering and Technology, Jodhpur, India</div>
+                            <div class="member-item">Dr. Amit Sanghi, Jodhpur Institute of Engineering and Technology, Jodhpur, India</div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="proceeding_chairs">
+                        <div class="member-list">
+                            <div class="member-item">Dr. Amit Joshi, Director – Global Knowledge Research Foundation
+                            </div>
+                            <div class="member-item">Prof. Nilanjan Dey, CSE Department, Techno International New Town, Kolkata,
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="publicity_chairs">
+                        <div class="member-list">
+                            <div class="member-item">Birute Rataite, Klaipedos valstybine kolegija / Higher Education Institution, Lithuania</div>
+                            <div class="member-item">Prof. Mohammed Majeed, Tamale Technical University, Ghana</div>
+                            <div class="member-item">Dr. Abdul Jabbar Khilji, Engineering College Bikaner</div>
+                            <div class="member-item">Dr. Pawan Tanwar, Engineering College Bikaner</div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="organizing_chairs">
+                        <div class="member-list">
+                            <div class="member-item">Dr. Vishal Gour, Engineering College Bikaner, India</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <h1 class="header-title">Technical Program Committee</h1>
+            <p class="sub-text">Meet our esteemed Technical Program Committee members.</p>
+        </div>
+
+        <!-- Header Row -->
+        <div class="row text-center mb-3">
+            <div class="col-4 table-header">Role</div>
+            <div class="col-8 table-header">Members</div>
+        </div>
+
+        <div class="row">
+
+            <!-- LEFT: Roles -->
+            <div class="col-4">
+                <div class="nav flex-column nav-pills">
+
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#technical_chairs">
+                        Technical Program Chair
+                    </button>
+
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#technical_committee">
+                        Technical Program Committee
+                    </button>
+                </div>
+            </div>
+
+            <!-- RIGHT: Members -->
+            <div class="col-8">
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="technical_chairs">
+                        <div class="member-list">
+                            <div class="member-item">Prof. Dharam Singh, CSE Department, NUST, Namibia</div>
+                            <div class="member-item">Prof. Jungpil SHIN, The University Of Aizu, Japan</div>
+                            <div class="member-item">Dr. Prabhu Jyot Singh, Churchill Institute of Higher education, Sydney, Australia</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="technical_committee">
+                        <div class="member-list">
+                            <div class="member-item">Prof. Mayank Aggarwal, Gurukul Kangri University, Haridwar, India
+                            </div>
+                            <div class="member-item">Dr. Lalt Indu Giri, NIT, Goa, India</div>
+                            <div class="member-item">Dr. Poonam Tanwar, MRIIRS, New Delhi, India</div>
+                            <div class="member-item">Prof. Xiao-Zhi Gao, University Of Eastern Finland, Finland</div>
+                            <div class="member-item">Dr. Avimanyou Vatsa, Fairleigh Dickinson University, New Jersey, USA
+                            </div>
+                            <div class="member-item">Prof. Kirti Seth, INHA University, Uzbekistan</div>
+                            <div class="member-item">Prof. Ashish Seth, INHA University, Uzbekistan</div>
+                            <div class="member-item">Prof. Yu-Chen Hu, Tunghai University, Taiwan</div>
+                            <div class="member-item">Dr. Anita Venugopal, Dhofar University, Oman</div>
+                            <div class="member-item">Dr. Shyam Akashe, ITM University Gwalior</div>
+                            <div class="member-item">Dr. Mohammed Majeed, Tamale Technical University, Ghana</div>
+                            <div class="member-item">Dr. Ankur Dumka, Women Institute Of Technology, Dehradun, India
+                            </div>
+                            <div class="member-item">Dr. Tien Anh Tran, Department Of Marine Engineering, Vietnam Maritime University, Vietnam</div>
+                            <div class="member-item">Dr. Suman Madan, ATLAS SkillTech University, Mumbai, India</div>
+                            <div class="member-item">Dr. Suresh Vishwakarma, Honorary Professor, University of Technology, Mauritius</div>
+                            <div class="member-item">Prof. Vishal Goyal, Punjabi University, Patiala, India</div>
+                            <div class="member-item">Amudhavel Jayavel, De Montfort University, Leicester, LE1 9BH, United Kingdom</div>
+                            <div class="member-item">Dr. Nonita Sharma, Indira Gandhi Delhi Technical University for Women, New Delhi</div>
+                            <div class="member-item">Prof. Manju Khari, JNU, Delhi</div>
+                            <div class="member-item">Alton Mabina, University of Botswana, Botswana</div>
+                            <div class="member-item">Dr. Richa Mathur, Poornima University, Jaipur</div>
+                            <div class="member-item">Dr. Sabyasachi Bhattacharyya, Assam Engineering College (AEC), Guwahati
+                            </div>
+                            <div class="member-item">Dr. Punit Gupta, ICFAI, Dehradun</div>
+                            <div class="member-item">Dr. R Sujatha, Vellore Institute Of Technology, Vellore</div>
+                            <div class="member-item">Santosh Das, Omdayal Group Of Institutions, Uluberia, Howrah, West Bengal, India</div>
+                            <div class="member-item">Abhirup Paria, Haldia Institute Of Technology</div>
+                            <div class="member-item">Amita Sharma, IIS Deemed To Be University Jaipur</div>
+                            <div class="member-item">Dr. Prashanth Ragam, Vellore Institute Of Technology (VIT-AP) University
+                            </div>
+                            <div class="member-item">Dr. Vinod Kumar Shukla, Amity University, Dubai, UAE</div>
+                            <div class="member-item">Dr. Balambigai S, Karpagam College Of Engineering, Coimbatore</div>
+                            <div class="member-item">Dr. Ambar Dutta, Amity Institute Of Information Technology, Amity University Kolkata</div>
+                            <div class="member-item">Dr. Soumi Ditta, Sister Nivedita University</div>
+                            <div class="member-item">Hiwa Ahmed Hassan, University of Raparin Rania-Kurdistan, Iraq
+                            </div>
+                            <div class="member-item">Dr. Danish Jamil, University of Santiago de Compostela, Spain</div>
+                            <div class="member-item">Abdul-Fatahi A-Karim Abubaka, Tamale Technical University, Ghana
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer id="foot" class="footer-section text-white pt-5">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-4">
+
+                <!-- About -->
+                <!-- <div class="col">
+                    <h5 class="footer-title">About Conference</h5>
+                    <p class="footer-text">
+                        It offers a dynamic environment for learning, collaboration, and innovation,
+                        fostering cutting-edge research that addresses the complexities of modern
+                        computational challenges.
+                    </p>
+                </div> -->
+
+                <!-- Contact 1 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Vishal Gour</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Deptartment Of Computer Application,<br> Engineering College, Bikaner (Rajasthan)-India</p>
+                    <p><i class="fa fa-envelope"></i> dr.vishalgoar@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 2 -->
+                <div class="col">
+                    <h5 class="footer-title  text-warning">Contact Us</h5>
+                    <p><strong>Dr. Jyoti Gajrani</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Department of Computer Science Engineering</p>
+                    <p><i class="fa fa-phone"></i> Engineering College, Ajmer, India</p>
+                    <p><i class="fa fa-envelope"></i> jyotigajrani@ecajmer.ac.in</p>
+                </div>
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Padma Joshi </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>Department of Computer Science,<br> Shri Jain Girls PG College, Bikaner, India </p>
+                    <p><i class="fa fa-envelope"></i> padmajoshi0110@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Sonia Arora </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>School of Computer Science in Emerging Technology,
+                        <br>Noida Institute of Engineering and Technology, Greater Noida, India. </p>
+                    <p><i class="fa fa-envelope"></i>soniasitm@gmail.com</p>
+                </div>
+
+
+
+                <!-- Menu -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Menu</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Refund & Cancellation</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Publication Policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom text-center mt-4 py-2 bg-primary">
+            Copyright © 2026 IC3IA 2026 | Powered by PranyaEducation
+        </div>
+
+    </footer>
+
+
+
+    <script type="text/javascript">
+        document.querySelectorAll('.nav-pills .nav-link').forEach(btn => {
+            btn.addEventListener('keydown', function(e) {
+
+                // Block arrow key navigation
+                if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
+                    e.preventDefault();
+
+                    // Allow page scrolling instead
+                    if (e.key === "ArrowDown") {
+                        window.scrollBy(0, 100);
+                    } else if (e.key === "ArrowUp") {
+                        window.scrollBy(0, -100);
+                    }
+                }
+
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/logo_and_menu.css" rel="stylesheet">
+
+    <style type="text/css">
+        /* Title line */
+        
+        .title-line {
+            width: 50px;
+            height: 3px;
+            background: #ff6a00;
+        }
+        /* Table */
+        
+        .custom-table {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        /* Header */
+        
+        .custom-table thead {
+            background: #0d1b3d;
+            color: #fff;
+        }
+        
+        .custom-table th {
+            padding: 15px;
+            font-weight: 600;
+            background-color: antiquewhite;
+        }
+        /* Body */
+        
+        .custom-table td {
+            padding: 15px;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: chartreuse;
+        }
+        /* Alternate rows */
+        
+        .alt-row {
+            background: #f2f3f7;
+        }
+        /* Responsive tweak */
+        
+        @media (max-width: 768px) {
+            .custom-table td,
+            .custom-table th {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+        /* CSS of Proceed to Pay Button and Pills below that */
+        /* Section Title */
+        
+        .section-title {
+            font-weight: 600;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 40px;
+            height: 3px;
+            background: #ff6a00;
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+        /* Buttons */
+        
+        .policy-btn {
+            background: #0f1635;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        
+        .policy-btn:hover {
+            background: #ff6a00;
+            color: #fff;
+        }
+        
+        .policy-btn.active {
+            color: #ff6a00;
+        }
+        /* Content Box */
+        
+        .policy-content {
+            background: #dfe3f2;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        /* Top Button */
+        
+        .pay-btn {
+            background: #0f1635;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: none;
+        }
+        /* List Styling */
+        
+        ul li {
+            margin-bottom: 8px;
+        }
+        /* CSS of Proceed to Pay Button and Pills below that ENDs here */
+    </style>
+</head>
+
+<body>
+
+    <!-- ?? NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">IC3IA 2026</a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Committee</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="committee.html#intLinkOC">Organizing Committee</a></li>
+                            <li><a class="dropdown-item" href="committee.html#intLinkTPC">Technical Program Committee</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CFP Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button">CFP</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#intLinkDateAndGuide">Dates and Guidelines</a></li>
+                            <li><a class="dropdown-item" href="index.html#intLinkReviewProcess">Review Process</a></li>
+                            <li><a class="dropdown-item" href="conference.html">Conference Tracks</a></li>
+                            <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="paperSubmission.html">Paper Submission</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foot">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tc.html">T & C</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="banner d-flex align-items-center text-center text-white" id="committee">
+        <div class="container">
+            <h1 class="display-1 fw-bold">Registration</h1>
+        </div>
+    </div>
+
+
+
+
+    <div class="container py-5">
+
+        <!-- Heading -->
+        <div class="text-center mb-4">
+            <p class="text-muted mb-1 fs-5 fw-semibold">Information</p>
+            <h2 class="fw-bold">REGISTRATION FEE</h2>
+            <p class="fw-semibold">
+                Once your paper is accepted, the registration process begins comprising of the following steps:
+            </p>
+        </div>
+
+        <!-- Note -->
+        <p class="mb-4">
+            <strong>Note:-</strong> The registration fee would be non-refundable in any case.
+        </p>
+
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table custom-table align-middle">
+
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Indian Authors</th>
+                        <th>Other Countries</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Single Paper (Academia)</td>
+                        <td>₹ 13,000</td>
+                        <td>250 USD</td>
+                    </tr>
+
+                    <tr class="alt-row">
+                        <td>Single Paper (Industry)</td>
+                        <td>₹ 20,000</td>
+                        <td>350 USD</td>
+                    </tr>
+
+                    <tr>
+                        <td>Only Participation</td>
+                        <td>₹ 2,000</td>
+                        <td>150 USD</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container mb-5">
+
+        <!-- DESKTOP (Tabs) -->
+        <div class="d-none d-md-block">
+
+            <!-- Buttons -->
+            <ul class="nav nav-pills nav-fill mb-3">
+                <li class="nav-item" style="background-color:honeydew;">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#refund">Refund &
+                        Cancellation</button>
+                </li>
+                <li class="nav-item" style="background-color:honeydew;">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#payment">Payment Policy</button>
+                </li>
+                <li class="nav-item" style="background-color:honeydew;">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#privacy">Privacy Policy</button>
+                </li>
+                <li class="nav-item" style="background-color:honeydew;">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#publication">Publication
+                        Policy</button>
+                </li>
+            </ul>
+
+            <!-- Content -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="payment">
+                    <div class="policy-content">
+                        If you do not attend the conference, or your paper is not published by Publisher, the conference fee will not be refunded. All rights reserved to the conference organizing committee.
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="refund">
+                    <div class="policy-content">Payment of fees in USD must accompany all registrations. No registration will be confirmed until payment is received.<br> Payment can be made by: Credit Card:<br> Only Visa and MasterCard are accepted and should be submitted online
+                        via the payment form.<br> Credit card details will not be accepted via email.
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="privacy">
+                    <div class="policy-content">
+                        <p>1. Introduction:</p>
+
+                        <p>
+                            ICDLAI-2025 is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website icdlai.in and use our online payment services powered by gateway. By using our website,
+                            you consent to the data practices described in this policy.
+                        </p>
+                        <p>2. Information We Collect</p>
+
+                        <p>
+                            Personal Information: Name, email address, phone number, billing/shipping address. Payment Information: When you make a payment, your card or banking details are processed securely by Gateway. We do not store your full payment details. Transaction Details: Amount
+                            paid, date, and transaction ID. Technical Information: IP address, browser type, device information, and cookies.
+                        </p>
+
+                        <p>3. How We Use Your Information:</p>
+
+                        <p>
+                            Process payments and complete transactions. Send order confirmations and receipts. Improve website security and functionality. Respond to customer inquiries and support requests. Comply with legal and regulatory obligations.
+                        </p>
+                        <p>4. Payment & Processing</p>
+
+                        <p>
+                            We use Gateway as our payment gateway. Gateway may collect and process your payment details securely.
+                        </p>
+                        <p>5. Data Security</p>
+                        <p>
+
+                            We implement appropriate security measures to protect your personal and payment information. However, no online transaction is completely secure, and we cannot guarantee absolute security.
+                        </p>
+                        <p>6. Sharing of Information</p>
+                        <P>
+
+                            Payment processors (Gateway) to complete transactions. Legal authorities if required by law. Third-party service providers for analytics and fraud prevention.
+                        </P>
+                        <p>7. Cookies and Tracking Technologies</p>
+                        <P>
+
+                            We may use cookies to enhance user experience, analyze website traffic, and personalize content. You can control cookie settings in your browser.
+                        </P>
+
+                        <P> 8. Your Rights</P>
+
+                        <P>
+                            Access, update, or delete your personal information. Opt-out of marketing communications. Withdraw consent for data processing where applicable.
+                        </P>
+                        <P>9. Changes to This Policy</P>
+
+                        <P>
+                            We may update this Privacy Policy from time to time. Any changes will be posted on this page with the updated date.
+                        </P>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="publication">
+                    <div class="policy-content">We do not claim or guarantee that any papers will be published by any specific publisher or indexed. Publishers or organizations can decline to publish the conference paper that does not meet their quality standards. We do not claim
+                        or guarantee that any papers will be indexed in any database. Indexing services evaluate conference papers and independently determine what they will index.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE (Accordion) -->
+        <div class="accordion d-md-none" id="policyAccordion">
+
+            <!-- Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                        Refund & Cancellation
+                    </button>
+                </h2>
+                <div id="acc1" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                    <div class="accordion-body">If you do not attend the conference, or your paper is not published by Publisher, the conference fee will not be refunded. All rights reserved to the conference organizing committee.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#acc2">
+                        Payment Policy
+                    </button>
+                </h2>
+                <div id="acc2" class="accordion-collapse collapse show" data-bs-parent="#policyAccordion">
+                    <div class="accordion-body">
+                        Payment of fees in USD must accompany all registrations. No registration will be confirmed until payment is received. Payment can be made by: Credit Card: Only Visa and MasterCard are accepted and should be submitted online via the payment form. Credit
+                        card details will not be accepted via email.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#acc3">
+                        Privacy Policy
+                    </button>
+                </h2>
+                <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                    <div class="accordion-body">Privacy content...</div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#acc4">
+                        Publication Policy
+                    </button>
+                </h2>
+                <div id="acc4" class="accordion-collapse collapse" data-bs-parent="#policyAccordion">
+                    <div class="accordion-body">We do not claim or guarantee that any papers will be published by any specific publisher or indexed. Publishers or organizations can decline to publish the conference paper that does not meet their quality standards. We do not claim
+                        or guarantee that any papers will be indexed in any database. Indexing services evaluate conference papers and independently determine what they will index.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="foot" class="footer-section text-white pt-5">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-4">
+
+                <!-- About -->
+                <!-- <div class="col">
+                    <h5 class="footer-title">About Conference</h5>
+                    <p class="footer-text">
+                        It offers a dynamic environment for learning, collaboration, and innovation,
+                        fostering cutting-edge research that addresses the complexities of modern
+                        computational challenges.
+                    </p>
+                </div> -->
+
+                <!-- Contact 1 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Vishal Gour</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Deptartment Of Computer Application,<br> Engineering College, Bikaner (Rajasthan)-India</p>
+                    <p><i class="fa fa-envelope"></i> dr.vishalgoar@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 2 -->
+                <div class="col">
+                    <h5 class="footer-title  text-warning">Contact Us</h5>
+                    <p><strong>Dr. Jyoti Gajrani</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Department of Computer Science Engineering</p>
+                    <p><i class="fa fa-phone"></i> Engineering College, Ajmer, India</p>
+                    <p><i class="fa fa-envelope"></i> jyotigajrani@ecajmer.ac.in</p>
+                </div>
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Padma Joshi </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>Department of Computer Science,<br> Shri Jain Girls PG College, Bikaner, India </p>
+                    <p><i class="fa fa-envelope"></i> padmajoshi0110@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Sonia Arora </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>School of Computer Science in Emerging Technology,
+                        <br>Noida Institute of Engineering and Technology, Greater Noida, India. </p>
+                    <p><i class="fa fa-envelope"></i>soniasitm@gmail.com</p>
+                </div>
+
+
+
+                <!-- Menu -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Menu</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Refund & Cancellation</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Publication Policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom text-center mt-4 py-2 bg-primary">
+            Copyright © 2026 IC3IA 2026 | Powered by PranyaEducation
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

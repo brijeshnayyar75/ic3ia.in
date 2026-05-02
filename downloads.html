@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../css/logo_and_menu.css" rel="stylesheet">
+
+    <style type="text/css">
+        a {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        
+        body {
+            background: #f4f5fb;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .download-card {
+            background-color: lightgray;
+            font-weight: bold;
+            border: 1px solid #cfd3e2;
+            border-radius: 10px;
+            padding: 40px 20px;
+            text-align: center;
+            transition: 0.3s;
+            height: 100%;
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .icon-circle {
+            width: 90px;
+            height: 90px;
+            background: #f5f6fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .icon-circle i {
+            font-size: 30px;
+            color: #1f2a44;
+        }
+        
+        .download-card h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1f2a44;
+        }
+        
+        .btn-download {
+            background-color: #ff6b2c;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: 500;
+            border: none;
+        }
+        
+        .btn-download:hover {
+            background-color: #e85a1f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ?? NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">IC3IA 2026</a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Committee</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="committee.html#intLinkOC">Organizing Committee</a></li>
+                            <li><a class="dropdown-item" href="committee.html#intLinkTPC">Technical Program Committee</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CFP Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button">CFP</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#intLinkDateAndGuide">Dates and Guidelines</a></li>
+                            <li><a class="dropdown-item" href="index.html#intLinkReviewProcess">Review Process</a></li>
+                            <li><a class="dropdown-item" href="conference.html">Conference Tracks</a></li>
+                            <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="paperSubmission.html">Paper Submission</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foot">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tc.html">T & C</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="banner d-flex align-items-center text-center text-white" id="committee">
+        <div class="container">
+            <h1 class="display-1 fw-bold">Downloads</h1>
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="download-card">
+                    <div class="icon-circle">
+                        <i class="bi bi-cloud-arrow-down-fill"></i>
+                    </div>
+                    <h5>Proceedings guidelines for authors</h5>
+                    <button class="btn btn-download"><a target="_blank" href="../downloads/proceedings-guidelines-for-authors-Springer.pdf">Download</a></button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="download-card">
+                    <div class="icon-circle">
+                        <i class="bi bi-cloud-arrow-down-fill"></i>
+                    </div>
+                    <h5>Sample Latex paper</h5>
+                    <button class="btn btn-download"><a target="_blank" href="../downloads/sample-latex-paper.pdf">Download</a></button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="download-card">
+                    <div class="icon-circle">
+                        <i class="bi bi-cloud-arrow-down-fill"></i>
+                    </div>
+                    <h5>Latex instructions for authors</h5>
+                    <button class="btn btn-download"><a target="_blank" href="../downloads/latex-instructions-for-authors.pdf">Download</a></button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6">
+                <div class="download-card">
+                    <div class="icon-circle">
+                        <i class="bi bi-cloud-arrow-down-fill"></i>
+                    </div>
+                    <h5>Latex Package</h5>
+                    <button class="btn btn-download"><a target="_blank" href="../downloads/latex-package.zip">Download</a></button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6">
+                <div class="download-card">
+                    <div class="icon-circle">
+                        <i class="bi bi-cloud-arrow-down-fill"></i>
+                    </div>
+                    <h5>Word Templates</h5>
+                    <button class="btn btn-download"><a target="_blank" href="../downloads/word-templates.zip">Download</a></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="foot" class="footer-section text-white pt-5">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-4">
+
+                <!-- About -->
+                <!-- <div class="col">
+                    <h5 class="footer-title">About Conference</h5>
+                    <p class="footer-text">
+                        It offers a dynamic environment for learning, collaboration, and innovation,
+                        fostering cutting-edge research that addresses the complexities of modern
+                        computational challenges.
+                    </p>
+                </div> -->
+
+                <!-- Contact 1 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Vishal Gour</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Deptartment Of Computer Application,<br> Engineering College, Bikaner (Rajasthan)-India</p>
+                    <p><i class="fa fa-envelope"></i> dr.vishalgoar@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 2 -->
+                <div class="col">
+                    <h5 class="footer-title  text-warning">Contact Us</h5>
+                    <p><strong>Dr. Jyoti Gajrani</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Department of Computer Science Engineering</p>
+                    <p><i class="fa fa-phone"></i> Engineering College, Ajmer, India</p>
+                    <p><i class="fa fa-envelope"></i> jyotigajrani@ecajmer.ac.in</p>
+                </div>
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Padma Joshi </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>Department of Computer Science,<br> Shri Jain Girls PG College, Bikaner, India </p>
+                    <p><i class="fa fa-envelope"></i> padmajoshi0110@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Sonia Arora </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>School of Computer Science in Emerging Technology,
+                        <br>Noida Institute of Engineering and Technology, Greater Noida, India. </p>
+                    <p><i class="fa fa-envelope"></i>soniasitm@gmail.com</p>
+                </div>
+
+
+
+                <!-- Menu -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Menu</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Refund & Cancellation</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Publication Policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom text-center mt-4 py-2 bg-primary">
+            Copyright © 2026 IC3IA 2026 | Powered by PranyaEducation
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

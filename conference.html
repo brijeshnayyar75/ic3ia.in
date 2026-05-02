@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../css/logo_and_menu.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            background: #f5f6fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-weight: 600;
+            margin: 40px 0 25px;
+            color: #2c3e50;
+        }
+        
+        .accordion {
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        .accordion-item {
+            border: none;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .accordion-button {
+            font-weight: 500;
+            padding: 15px;
+            background: #ffffff;
+            transition: 0.3s;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: #e9edf5;
+            box-shadow: none;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        
+        .accordion-body {
+            background: #eef2f7;
+            padding: 20px;
+        }
+        
+        .track-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        
+        .track-item i {
+            color: #ff6b00;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        .track-item:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ?? NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">IC3IA 2026</a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Committee</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="committee.html#intLinkOC">Organizing Committee</a></li>
+                            <li><a class="dropdown-item" href="committee.html#intLinkTPC">Technical Program Committee</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CFP Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button">CFP</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#intLinkDateAndGuide">Dates and Guidelines</a></li>
+                            <li><a class="dropdown-item" href="index.html#intLinkReviewProcess">Review Process</a></li>
+                            <li><a class="dropdown-item" href="conference.html">Conference Tracks</a></li>
+                            <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="paperSubmission.html">Paper Submission</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foot">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tc.html">T & C</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="banner d-flex align-items-center text-center text-white" id="committee">
+        <div class="container">
+            <h1 class="display-1 fw-bold">Conference Tracks</h1>
+        </div>
+    </div>
+
+
+    <div class="container" style="background-color:whitesmoke">
+
+        <h5 class="section-title text-primary">
+            Here are potential tracks for 6th International Conference on Advances in Information Communication Technology and Computing
+        </h5>
+
+        <div class="accordion" id="conferenceTracks">
+
+            <!-- Track 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t1">
+                        Track 1: Computational Complexity & Theory
+                    </button>
+                </h2>
+                <div id="t1" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Algorithmic complexity analysis</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> NP-completeness and approximation algorithms</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Parameterized and fine-grained complexity</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Randomized and probabilistic algorithms</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Graph theory and combinatorial optimization</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t2">
+                        Track 2: Intelligent Algorithms & Machine Learning
+                    </button>
+                </h2>
+                <div id="t2" class="accordion-collapse collapse  text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Supervised and unsupervised learning</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Deep learning architectures and optimization</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Reinforcement learning</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Evolutionary algorithms and swarm intelligence</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Hybrid intelligent systems</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t3">
+                        Track 3: Data Science & Big Data Analytics
+                    </button>
+                </h2>
+                <div id="t3" class="accordion-collapse collapse  text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Big data processing frameworks</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Data mining and knowledge discovery</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Predictive analytics</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Data visualization and interpretation</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Real-time and streaming data analytics</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t4">
+                        Track 4: Artificial Intelligence Applications
+                    </button>
+                </h2>
+                <div id="t4" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> AI in healthcare and bioinformatics</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> AI in finance and risk analytics</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> AI in smart cities and IoT</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Natural language processing (NLP)</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Computer vision and image processing</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t5">
+                        Track 5: Optimization Techniques & Metaheuristics
+                    </button>
+                </h2>
+                <div id="t5" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Classical optimization methods</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Heuristic and metaheuristic techniques</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Multi-objective optimization</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Nature-inspired algorithms</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Optimization in engineering applications</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 6-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t6">
+                        Track 6: Cloud, Edge & Distributed Computing
+                    </button>
+                </h2>
+                <div id="t6" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Distributed algorithms and systems</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Cloud computing architectures</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Edge and fog computing</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Parallel processing</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Resource allocation and scheduling</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t7">
+                        Track 7: Cybersecurity & Cryptography
+                    </button>
+                </h2>
+                <div id="t7" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Secure algorithms and protocols</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Cryptographic techniques</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Blockchain and distributed ledger technologies</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Privacy-preserving computation</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Threat detection using AI</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t8">
+                        Track 8: Computational Intelligence in Emerging Technologies
+                    </button>
+                </h2>
+                <div id="t8" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Quantum computing algorithms</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> AI in robotics and automation</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Intelligent transportation systems</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Industry 4.0 applications</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Human-computer interaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t9">
+                        Track 9: Software Engineering & Intelligent Systems
+                    </button>
+                </h2>
+                <div id="t9" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Software testing and quality assurance</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Agile and DevOps methodologies</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Intelligent software systems</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Automated code generation</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Software reliability and maintenance</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t10">
+                        Track 10: Interdisciplinary & Emerging Trends
+                    </button>
+                </h2>
+                <div id="t10" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Computational methods in social sciences</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> AI for sustainability and environment</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Smart agriculture and rural technologies</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Ethical AI and explainability</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Future trends in intelligent computing</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer id="foot" class="footer-section text-white pt-5">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-4">
+
+                <!-- About -->
+                <!-- <div class="col">
+                    <h5 class="footer-title">About Conference</h5>
+                    <p class="footer-text">
+                        It offers a dynamic environment for learning, collaboration, and innovation,
+                        fostering cutting-edge research that addresses the complexities of modern
+                        computational challenges.
+                    </p>
+                </div> -->
+
+                <!-- Contact 1 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Vishal Gour</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Deptartment Of Computer Application,<br> Engineering College, Bikaner (Rajasthan)-India</p>
+                    <p><i class="fa fa-envelope"></i> dr.vishalgoar@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 2 -->
+                <div class="col">
+                    <h5 class="footer-title  text-warning">Contact Us</h5>
+                    <p><strong>Dr. Jyoti Gajrani</strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i> Department of Computer Science Engineering</p>
+                    <p><i class="fa fa-phone"></i> Engineering College, Ajmer, India</p>
+                    <p><i class="fa fa-envelope"></i> jyotigajrani@ecajmer.ac.in</p>
+                </div>
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Padma Joshi </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>Department of Computer Science,<br> Shri Jain Girls PG College, Bikaner, India </p>
+                    <p><i class="fa fa-envelope"></i> padmajoshi0110@gmail.com</p>
+                </div>
+
+
+                <!-- Contact 3 -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Contact Us</h5>
+                    <p><strong>Dr. Sonia Arora </strong></p>
+                    <p><i class="fa fa-map-marker-alt"></i>School of Computer Science in Emerging Technology,
+                        <br>Noida Institute of Engineering and Technology, Greater Noida, India. </p>
+                    <p><i class="fa fa-envelope"></i>soniasitm@gmail.com</p>
+                </div>
+
+
+
+                <!-- Menu -->
+                <div class="col">
+                    <h5 class="footer-title text-warning">Menu</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Refund & Cancellation</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Publication Policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom text-center mt-4 py-2 bg-primary">
+            Copyright © 2026 IC3IA 2026 | Powered by PranyaEducation
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
