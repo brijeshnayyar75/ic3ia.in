@@ -152,7 +152,7 @@
     
     .banner {
         height: 500px;
-        background: url('./images/jaipurForts.png') no-repeat center center/cover;
+        background: url('../images/jaipurForts.png') no-repeat center center/cover;
     }
     
     .banner .container {
