@@ -9,38 +9,7 @@
     <link href="./css/logo_and_menu.css" rel="stylesheet">
 
     <style type="text/css">
-             /* DESKTOP */
-            .banner {
-                height: 500px;
-                background: url('./images/jaipurForts.png') no-repeat center center/cover;
-                position: relative;
-            }
-            
-            /* OVERLAY */
-            .banner::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: rgba(0,0,0,0.5);
-            }
-            
-            /* MOBILE FIX */
-            @media (max-width: 768px) {
-                .banner {
-                    height: auto;              /* remove fixed height */
-                    min-height: 60vh;          /* keep good spacing */
-                    background-size: contain;  /* IMPORTANT: show full image */
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    padding: 40px 0;
-                }
-            }
-
-        @media (max-width: 768px) {
-            .display-1 {
-                font-size: 2rem !important;
-            }
-        }
+    
     </style>
 </head>
 
@@ -113,7 +82,9 @@
     
     
     <div class="banner d-flex align-items-center text-center text-white" id="committee">
-        
+        <div class="container">
+            <h1 class="display-1 fw-bold">Venue</h1>
+        </div>
     </div>
 
     <div class="container py-5 my-5">
