@@ -73,8 +73,6 @@
         }
         /* CSS of Proceed to Pay Button and Pills below that ENDs here */
 
-
-        
         .nav-pills .nav-link {
             border-radius: 8px;
             font-weight: 600;
@@ -92,6 +90,64 @@
             background-color: #ff6a00;
             color: #fff;
         }
+
+
+
+        
+        .accordion {
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        .accordion-item {
+            border: none;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .accordion-button {
+            font-weight: 500;
+            padding: 15px;
+            background: #ffffff;
+            transition: 0.3s;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: #e9edf5;
+            box-shadow: none;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        
+        .accordion-body {
+            background: #eef2f7;
+            padding: 20px;
+        }
+        
+        .track-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        
+        .track-item i {
+            color: #ff6b00;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        .track-item:last-child {
+            margin-bottom: 0;
+        }
+
+
+
+
         
     </style>
 </head>
@@ -226,6 +282,93 @@
     </div>
 
 
+
+
+    <!-- New Code -->
+    <div class="container" style="background-color:whitesmoke">
+        <div class="accordion" id="conferenceTracks">
+
+            <!-- Track 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t8">
+                        Track 8: Computational Intelligence in Emerging Technologies
+                    </button>
+                </h2>
+                <div id="t8" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Quantum computing algorithms</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> AI in robotics and automation</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Intelligent transportation systems</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Industry 4.0 applications</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Human-computer interaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t9">
+                        Track 9: Software Engineering & Intelligent Systems
+                    </button>
+                </h2>
+                <div id="t9" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Software testing and quality assurance</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Agile and DevOps methodologies</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Intelligent software systems</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Automated code generation</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Software reliability and maintenance</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t10">
+                        Track 10: Interdisciplinary & Emerging Trends
+                    </button>
+                </h2>
+                <div id="t10" class="accordion-collapse collapse text-primary fw-semibold" data-bs-parent="#conferenceTracks">
+                    <div class="accordion-body">
+                        <div class="track-item"><i class="bi bi-check-square"></i> Computational methods in social sciences</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> AI for sustainability and environment</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Smart agriculture and rural technologies</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Ethical AI and explainability</div>
+                        <div class="track-item"><i class="bi bi-check-square"></i> Future trends in intelligent computing</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
     <div class="container mb-5">
