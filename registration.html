@@ -9,7 +9,8 @@
     <link href="./css/logo_and_menu.css" rel="stylesheet">
 
     <style type="text/css">
-             /* CSS of Proceed to Pay Button and Pills below that */
+        
+        /* CSS of Proceed to Pay Button and Pills below that */
         /* Section Title */
         
         .section-title {
@@ -72,6 +73,26 @@
         }
         /* CSS of Proceed to Pay Button and Pills below that ENDs here */
 
+
+        
+        .nav-pills .nav-link {
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        
+        .nav-pills .nav-link.active {
+            background: linear-gradient(45deg, #0f1635, #1e2a78);
+            color: #fff;
+        }
+
+        
+        /* Hover effect */
+        .nav-pills .nav-link:hover {
+            background-color: #ff6a00;
+            color: #fff;
+        }
+        
     </style>
 </head>
 
@@ -207,7 +228,6 @@
 
 
 
-
     <div class="container mb-5">
 
         <!-- DESKTOP (Tabs) -->
@@ -216,7 +236,7 @@
             <!-- Buttons -->
             <ul class="nav nav-pills nav-fill mb-3">
                 <li class="nav-item" style="background-color:honeydew;">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#refund">Refund &
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#refund">Refund &
                         Cancellation</button>
                 </li>
                 <li class="nav-item" style="background-color:honeydew;">
@@ -238,7 +258,7 @@
                         If you do not attend the conference, or your paper is not published by Publisher, the conference fee will not be refunded. All rights reserved to the conference organizing committee.
                     </div>
                 </div>
-                <div class="tab-pane fade" id="refund">
+                <div class="tab-pane fade show active" id="refund">
                     <div class="policy-content">Payment of fees in USD must accompany all registrations. No registration will be confirmed until payment is received.<br> Payment can be made by: Credit Card:<br> Only Visa and MasterCard are accepted and should be submitted online
                         via the payment form.<br> Credit card details will not be accepted via email.
                     </div>
