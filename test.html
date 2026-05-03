@@ -1,0 +1,39 @@
+<html>
+<head>
+<style type="text/css">
+/* HERO CONTAINER */
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BLURRED BACKGROUND (fills full screen) */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/jaipurForts.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(20px) brightness(0.6);
+    transform: scale(1.1); /* avoid blur edges */
+}
+
+/* MAIN IMAGE (FULLY VISIBLE, NO CROP) */
+.banner img {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 🔥 NO CROPPING */
+}
+</style>
+</head>
+<body>
+<div class="banner">
+    <img src="./images/jaipurForts.png" alt="Jaipur Forts">
+</div>
+</body>
+</html>
