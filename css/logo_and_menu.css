@@ -136,8 +136,7 @@
 
     .banner {
         height: 500px;
-        background: url('Your_image') no-repeat center center/cover;
-        position: relative;
+        background: url('../images/hero.jfif') no-repeat center center/cover;
     }
 
 
@@ -153,10 +152,6 @@
         background: rgba(0, 0, 0, 0.5);
     }
     
-    .banner {
-        height: 500px;
-        background: url('../images/hero.jfif') no-repeat center center/cover;
-    }
     
     .banner .container {
         position: relative;
