@@ -132,14 +132,12 @@
     li.nav-item {
         font-weight: bold;
     }
-
-
+    
     .banner {
         height: 500px;
-        background: url('../images/hero.jfif') no-repeat center center/cover;
+        background: url('your-image.jpg') no-repeat center center/cover;
+        position: relative;
     }
-
-
     /* Optional dark overlay for better text visibility */
     
     .banner::before {
@@ -152,6 +150,10 @@
         background: rgba(0, 0, 0, 0.5);
     }
     
+    .banner {
+        height: 500px;
+        background: url('../images/hero.jfif') no-repeat center center/cover;
+    }
     
     .banner .container {
         position: relative;
