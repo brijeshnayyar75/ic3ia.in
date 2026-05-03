@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-
-    <!-- ✅ MOST IMPORTANT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>IC3IA 2026</title>
+    <title>My Institute</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,142 +15,1116 @@
     <!-- AOS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
+    <link href="../css/logo_and_menu.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/logo_and_menu.css">
+    <style>
+        /* Proceedings and Book image css*/
+        /* Section Title */
+        
+        .section-title {
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        /* Year Buttons */
+        
+        .year-btn {
+            background: #e9ecef;
+            border: none;
+            padding: 8px 18px;
+            margin: 5px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        
+        .year-btn.active {
+            background: #555;
+            color: #fff;
+        }
+        
+        .year-btn:hover {
+            background: #777;
+            color: #fff;
+        }
+        /* Card Container */
+        
+        .proceeding-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 40px 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        /* Book Images */
+        
+        .book-img {
+            width: 160px;
+            height: 220px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+        
+        .book-img:hover {
+            transform: scale(1.05);
+        }
+        /* Responsive spacing */
+        
+        @media (max-width: 768px) {
+            .book-img {
+                width: 120px;
+                height: 170px;
+            }
+        }
+        /* Proceedings and Book image css ENDs here */
+        /* Partners CSS*/
+        
+        .section-title {
+            text-align: center;
+            font-weight: 700;
+            color: #1f2a44;
+            letter-spacing: 1px;
+        }
+        
+        .title-line {
+            width: 60px;
+            height: 3px;
+            background-color: #ff6a2a;
+            margin: 0 auto 10px auto;
+        }
+        
+        .sponsor-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+            height: 100%;
+        }
+        
+        .sponsor-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .sponsor-card img {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .sponsor-text {
+            font-weight: 700;
+            color: #1f2a44;
+            font-size: 16px;
+        }
+        /* Partners CSS ENDs here */
+        /*pills css*/
+        /* Heading line */
+        
+        .line {
+            display: inline-block;
+            width: 40px;
+            height: 3px;
+            background: #ff7a00;
+            margin-right: 10px;
+        }
+        /* Pills container */
+        
+        .custom-pills .nav-item {
+            margin: 5px;
+        }
+        /* Pills style */
+        
+        .custom-pills .nav-link {
+            background: #0f1635;
+            color: #fff;
+            border-radius: 6px;
+            padding: 12px 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        /* Active pill */
+        
+        .custom-pills .nav-link.active {
+            color: #ff7a00;
+        }
+        /* Hover */
+        
+        .custom-pills .nav-link:hover {
+            background: #1a2352;
+        }
+        /* Mobile spacing */
+        
+        @media (max-width: 768px) {
+            .custom-pills .nav-item {
+                width: 100%;
+            }
+        }
+        /* Date box */
+        
+        .date-box {
+            background: #e9ecf5;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        /* Badge */
+        
+        .badge {
+            background: #fff;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+        /* Alert */
+        
+        .alert-box {
+            background: #ff6f2c;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .btn-orange {
+            background: #0f1635;
+            color: #fff;
+            border-radius: 25px;
+            padding: 8px 20px;
+        }
+        /*Pill CSS ends here*/
+        /*Cards CSS*/
+        
+        .speaker-card {
+            background: #f8f9fc;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.4s;
+            overflow: hidden;
+        }
+        /* Hover effect */
+        
+        .speaker-card:hover {
+            transform: translateY(-10px);
+        }
+        /* Profile Image */
+        
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        /* Role text */
+        
+        .role {
+            color: #ff6a00;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        /* Description */
+        
+        .desc {
+            color: #555;
+            font-size: 14px;
+        }
+        /* Quote corner */
+        
+        .quote-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background: #0d1b3d;
+            color: #fff;
+            border-bottom-left-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        /*Cards CSS ends here*/
+        /* Background */
+        
+        .highlights-section {
+            background: #2f3654;
+        }
+        /* Card */
+        
+        .highlight-card {
+            background: #f8f9fa;
+            padding: 30px 20px;
+            border-radius: 10px;
+            position: relative;
+            transition: 0.5s;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        /* Hover */
+        
+        .highlight-card:hover {
+            transform: translateY(-8px);
+        }
+        /* Icon circle */
+        
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        /* Blue style */
+        
+        .icon.blue {
+            background: rgba(0, 123, 255, 0.2);
+            color: #0d6efd;
+        }
+        /* Orange style */
+        
+        .icon.orange {
+            background: rgba(255, 122, 0, 0.2);
+            color: #ff7a00;
+        }
+        /* Fancy background circle effect */
+        
+        .icon::after {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            top: -20px;
+            left: -20px;
+            background: inherit;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .carousel-item {
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .carousel-caption {
+            bottom: 30%;
+        }
+        
+        .feature-box {
+            transition: 0.3s;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        
+        footer {
+            background: #111;
+            color: #fff;
+        }
+        
+        .banner {
+            height: 500px;
+            background: url('your-image.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+        /* Optional dark overlay for better text visibility */
+        
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .banner {
+            height: 500px;
+            background: url('../images/jaipurForts.png') no-repeat center center/cover;
+        }
+        
+        .banner .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .custom-card {
+            border-radius: 20px;
+            border: none;
+            background: #f8f9fc;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        
+        .text-orange {
+            color: #ff6a00;
+            font-weight: 600;
+        }
+        
+        .quote-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #0d1b3d;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-bottom-left-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        
+        .carousel-item {
+            padding: 20px 0;
+        }
+        
+        .carousel-inner {
+            overflow: visible;
+        }
+        /* Custom Button Style */
+        
+        .custom-btn {
+            background: #0f1635 !important;
+            color: #fff !important;
+            font-weight: 600;
+            text-align: center;
+            justify-content: center;
+            border-radius: 6px !important;
+            padding: 12px;
+        }
+        /* Remove default arrow */
+        
+        .accordion-button::after {
+            display: none;
+        }
+        /* Active state */
+        
+        .custom-btn:not(.collapsed) {
+            color: #ff7a00 !important;
+            background: #0f1635 !important;
+        }
+        /* Hover effect */
+        
+        .custom-btn:hover {
+            background: #1c2555 !important;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- ?? NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">IC3IA 2026</a>
 
-        <a class="navbar-brand" href="#">IC3IA 2026</a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
 
-        <div class="collapse navbar-collapse justify-content-end" id="nav">
-            <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
 
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#">Committee</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Organizing Committee</a></li>
-                        <li><a class="dropdown-item" href="#">Technical Committee</a></li>
-                    </ul>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Committee</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="committee.html#intLinkOC">Organizing Committee</a></li>
+                            <li><a class="dropdown-item" href="committee.html#intLinkTPC">Technical Program Committee</a></li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Submission</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Registration</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Venue</a></li>
+                    <!-- CFP Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button">CFP</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#intLinkDateAndGuide">Dates and Guidelines</a></li>
+                            <li><a class="dropdown-item" href="index.html#intLinkReviewProcess">Review Process</a></li>
+                            <li><a class="dropdown-item" href="conference.html">Conference Tracks</a></li>
+                            <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
 
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paperSubmission.html">Paper Submission</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foot">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tc.html">T & C</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="banner d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-6 fw-bold">2<sup>nd</sup> International Conference on Computational Complexity and Intelligent Algorithms
+            </h1>
+            <p class="lead fs-3 fw-bold">(IC3IA-2026) <br />30-31 October 2026 </p>
+            <!-- <a href="#" class="btn btn-primary mt-3">Get Started</a> -->
         </div>
     </div>
-</nav>
 
-<!-- ===== HERO ===== -->
-<section class="banner text-white text-center">
-    <div class="container">
-        <h1 class="fw-bold">
-            2<sup>nd</sup> International Conference on Computational Complexity
-        </h1>
-        <p class="mt-3 fw-semibold">
-            IC3IA-2026 | 30–31 October 2026
-        </p>
-    </div>
-</section>
+    <!--
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			</div>
+		</div>
+	</div>
+</div>
+-->
 
-<!-- ===== ABOUT ===== -->
-<section>
-    <div class="container">
-        <h2 class="text-center fw-bold mb-4">About Conference</h2>
-
-        <p class="text-muted text-justify">
-            IC3IA–2026 is a global platform for researchers, academicians, and industry experts 
-            to share innovations in computational complexity, artificial intelligence, and algorithms.
-        </p>
-    </div>
-</section>
-
-<!-- ===== HIGHLIGHTS ===== -->
-<section class="highlights-section text-white">
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-5 mb-4">
-                <h2 class="fw-bold">Conference Highlights</h2>
-                <p>Explore research, keynote talks, and discussions.</p>
+    <!--About Conference -->
+    <div class="container-fluid mt-5 pt-4">
+        <div class="container">
+            <!--About Conference-->
+            <div class="row pb-3">
+                <div class="col-12 fs-3 fw-bold text-center">
+                    About Conference
+                </div>
+            </div>
+            <div class="row fw-semibold">
+                <div class="col-12" style="text-align: justify;">
+                    <p>The 2nd International Conference on Computational Complexity and Intelligent Algorithms (IC3IA–2026) is an international forum dedicated to advancing research and innovation in the fields of computational complexity, artificial intelligence,
+                        and intelligent algorithms. Building on the success of previous editions of IC3IA, the conference aims to bring together leading academicians, researchers, scientists, and industry professionals from across the globe to share their
+                        latest findings, exchange ideas, and explore emerging trends in computing technologies.</p>
+                    <p>IC3IA has established itself as a significant platform for presenting high-quality research contributions in areas such as algorithm design, machine learning, deep learning, optimization techniques, data analytics, and theoretical
+                        computer science. Previous editions of the conference have successfully showcased cutting-edge research and have been recognized for publishing peer-reviewed proceedings that contribute to global scientific knowledge.</p>
+                    <p>The IC3IA–2026 conference will be held on 30–31 October 2026, and is expected to feature keynote lectures by distinguished experts, technical paper presentations, panel discussions, and special sessions focusing on emerging technologies.
+                        The conference encourages interdisciplinary collaboration and aims to bridge the gap between academia and industry by addressing real-world challenges using intelligent computational approaches.
+                    </p>
+                </div>
             </div>
 
-            <div class="col-lg-7">
-                <div class="row">
+            <hr />
 
-                    <div class="col-md-6 mb-3">
-                        <div class="highlight-card">
-                            <div class="icon blue mb-2"><i class="fa fa-microphone"></i></div>
-                            <h5>Keynotes</h5>
-                            <p>Talks by top experts</p>
+            <!--Conference Objectives:-->
+            <div class="row pb-3">
+                <div class="col-12 fs-3 fw-bold text-center">
+                    Conference Objectives:
+                </div>
+            </div>
+
+            <div class="row fw-semibold">
+                <div class="col-12" style="text-align: justify;">
+                    <ul>
+                        <li>To provide a global platform for researchers and practitioners to present innovative ideas and research outcomes.
+                        </li>
+                        <li>To discuss recent advancements in computational complexity and intelligent algorithms.</li>
+                        <li>To foster collaboration among academia, industry, and research organizations. </li>
+                        <li>To promote the application of intelligent systems in solving complex real-world problems.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <!--Major Themes and Topics:-->
+            <div class="row pb-3">
+                <div class="col-12 fs-3 fw-bold text-center">
+                    Major Themes and Topics:
+                </div>
+            </div>
+
+            <div class="row row-cols-lg-3 row-cols-md-2 mb-4 row-cols-1 fw-semibold">
+                <div class="col">
+                    <ul>
+                        <li>Computational Complexity Theory </li>
+                        <li>Intelligent Algorithms and Optimization Techniques </li>
+                        <li>Machine Learning and Deep Learning </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Big Data Analytics and Data Mining </li>
+                        <li>Natural Language Processing and Computer Vision </li>
+                        <li>Quantum Computing and Algorithms </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Cryptography and Secure Computing </li>
+                        <li>AI in Cyber-Physical Systems and IoT </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+    <div class="container-fluid pb-3">
+        <div class="container">
+
+            <!--Who should attend and why attend IC3IA-->
+            <div class="row">
+                <div class="col-12 pb-3 col-md-6 pb-md-0">
+                    <div class="fs-2 fw-semibold text-center mb-4">Who Should Attend</div>
+                    <ul class="ms-5 fw-semibold">
+                        <li>University Faculty and Researchers</li>
+                        <li>Industry Professionals and Innovators</li>
+                        <li>Graduate and Doctoral Students</li>
+                        <li>Technology Entrepreneurs and Startups</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 pb-md-0">
+                    <div class="fs-2 fw-semibold text-center mb-4">Why Attend IC3IA 2026</div>
+                    <ul class="ms-5 fw-semibold">
+                        <li>Opportunity to present your research to a global audience</li>
+                        <li>Publication in Scopus-indexed Springer proceedings</li>
+                        <li>Networking with top researchers and industry experts</li>
+                        <li>Workshops, keynote sessions, and panel discussions from renowned speakers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <!--Stay Connected-->
+            <div class="row pb-3">
+                <div class="col-12 fs-2 fw-bold text-center">
+                    Stay Connected
+                </div>
+            </div>
+
+            <div class="row ps-5 fw-semibold">
+                <div class="col-12 pb-3">
+                    Visit our website regularly for updates on paper submission deadlines, registration details, keynote announcements, and publication guidelines.
+                </div>
+                <div class="col-12">
+                    Join us at IC3IA 2026 — where innovation meets collaboration!
+                </div>
+            </div>
+
+            <hr />
+            <!--Author Guidelines-->
+            <div class="row mt-3 pb-3">
+                <div class="col-12 fs-2 fw-bold text-center">
+                    Author Guidelines
+                </div>
+            </div>
+
+            <div class="row ps-5 fw-semibold">
+                <div class="col-12 pb-3">
+                    Prospective authors are invited to submit manuscripts reporting original unpublished research and recent developments in the topics related to the conference. It is required that the manuscript follows the standard Springer camera-ready format. Submissions
+                    must include title, abstract, keywords, author and affiliation with email address. Please double-check the paper size in your page setup to make sure you are using the A4 size paper. The paper should not contain page numbers or any
+                    special headers or footers.
+                </div>
+                <div class="col-12 pb-3">
+                    Regular papers should present novel perspectives within the general scope of the conference. The conference only accepts full manuscripts with minimum 10 pages, and after 10 pages, extra charges INR 750 will be applied per extra page
+                </div>
+                <div class="col-12 pb-3">
+                    Authors should submit their papers online. We use Microsoft CMT system for submission of papers and review process. Unregistered authors should first create an account on Microsoft CMT to log on. To avoid last minutes network problems, authors are strongly
+                    encouraged to create their Microsoft CMT submission system user accounts (if you do not already have one) and register their submission well in advance of the deadline.
+                </div>
+                <div class="col-12">
+                    Authors are invited to submit full papers for consideration with a maximum length limit of 10 printed pages including all the figures, references, and appendices. Submission of paper must be original and should not have been previously published or under
+                    consideration for publication. All papers will be sent for peer review and the corresponding author will be notified of the outcome of the review process. The selected Research Papers of the conference will be published by Scopus indexed
+                    Conference Proceedings. At least one of the authors of each accepted paper must register for the conference and present their paper in person at the conference. All submissions are to be done electronically through CMT link.
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- CMT Acknowledgement-->
+            <div class="row mt-3 pb-3">
+                <div class="col-12 fs-2 fw-bold text-center">
+                    CMT Ackonwledgement
+                </div>
+            </div>
+
+            <div class="row ps-5 fw-semibold">
+                <div class="col-12 pb-3">
+                    The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and
+                    support.
+                </div>
+            </div>
+        </div>
+        <!--Highlights Area, Cards with Animations -->
+        <section class="highlights-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="col-lg-5 text-white" data-aos="fade-up">
+                        <p class="fs-5 text-warning fw-bold">Conference Highlights</p>
+                        <h2 class="fw-bold mb-3">Highlights</h2>
+                        <p class="fs-5">
+                            Key insights, research presentations, and discussions on AI and advanced materials.
+                        </p>
+                    </div>
+
+                    <!-- RIGHT CARDS -->
+                    <div class="col-lg-7">
+                        <div class="row">
+
+                            <!-- Card 1 -->
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="highlight-card">
+                                    <div class="icon blue"><i class="fa fa-microphone"></i></div>
+                                    <h5>Keynote Speeches</h5>
+                                    <p>Interactive discussions on pressing issues and opportunities.</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 (shifted down) -->
+                            <div class="col-md-6 mb-4 mt-md-5" data-aos="fade-up">
+                                <div class="highlight-card">
+                                    <div class="icon orange"><i class="fa fa-cog"></i></div>
+                                    <h5>Technical Sessions</h5>
+                                    <p>Presentation of peer-reviewed research papers.</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="highlight-card">
+                                    <div class="icon orange"><i class="fa fa-file"></i></div>
+                                    <h5>Poster Sessions</h5>
+                                    <p>Opportunity for researchers to present their work.</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 (shifted down) -->
+                            <div class="col-md-6 mb-4 mt-md-5" data-aos="fade-up">
+                                <div class="highlight-card">
+                                    <div class="icon blue"><i class="fa fa-comments"></i></div>
+                                    <h5>Panel Discussions</h5>
+                                    <p>Interactive discussions on challenges and innovations.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="col-md-6 mb-3">
-                        <div class="highlight-card">
-                            <div class="icon orange mb-2"><i class="fa fa-cog"></i></div>
-                            <h5>Technical Sessions</h5>
-                            <p>Research presentations</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid pb-3 mt-3">
+        <div class="container">
+            <!--Why join us and Target Audience-->
+            <div class="row">
+                <div class="col-12 pb-3 col-md-6 pb-md-0">
+                    <div class="fs-2 fw-semibold text-center mb-4"> Why Join Us </div>
+                    <ul class="ms-5 fw-semibold">
+                        <li>Learn from the best in the industry</li>
+                        <li>Discover the best tools and practices</li>
+                        <li>Meet developers from all over the world</li>
+                        <li>Grow your network</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 pb-md-0">
+                    <div class="fs-2 fw-semibold text-center mb-4"> Target Audience</div>
+                    <ul class="ms-5 fw-semibold">
+                        <li>Academics, researchers, and PhD scholars in computer science and engineering</li>
+                        <li>Professionals from the AI, cybersecurity, and data science industries</li>
+                        <li>Government and industry stakeholders exploring intelligent solutions</li>
+                        <li>Students and enthusiasts interested in advanced algorithms and computing</li>
+                        <li>Technology developers and innovators</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h4>Speakers and Panels</h4>
+            <h2 class="fw-bold">Keynote</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="speaker-card text-center p-4">
+                    <div class="quote-box">”</div>
+
+                    <img src="../images/AmitJoshi.jpeg" class="profile-img" alt="">
+
+                    <h5 class="mt-3">Dr. Amit Joshi</h5>
+                    <p class="role">Director</p>
+
+                    <p class="desc">
+                        Department of Computer Science,<br> Global Knowledge Research Foundation,<br> Ahmedabad, Gujarat, India
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="speaker-card text-center p-4">
+                    <div class="quote-box">”</div>
+
+                    <img src="../images/NilanjanDey.jpeg" class="profile-img" alt="">
+
+                    <h5 class="mt-3">Dr. Nilanjan Dey</h5>
+                    <p class="role">Associate Professor</p>
+
+                    <p class="desc">
+                        Department of Computer Science<br> and Engineering, Techno<br> International New Town, Kolkata, India
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="speaker-card text-center p-4">
+                    <div class="quote-box">”</div>
+
+                    <img src="../images/SureshVishwakarma.jpeg" class="profile-img" alt="">
+
+                    <h5 class="mt-3">Dr. Suresh Vishwakarma</h5>
+                    <p class="role">Honorary Professor</p>
+
+                    <p class="desc">
+                        Senior Electrical Engineer,<br> Vancouver Canada<br> Part-time Faculty,<br> University of Technology Mauritius
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container my-5" id="intLinkDateAndGuide">
+
+        <h2 class="text-center fw-bold mb-4">
+            <span class="line"></span> Dates and Paper Submission
+        </h2>
+
+        <!-- Pills -->
+        <ul class="nav nav-pills custom-pills justify-content-center mb-4" id="pills-tab">
+
+            <li class="nav-item col-12 col-md-auto">
+                <button class="nav-link active w-100" data-bs-toggle="pill" data-bs-target="#dates">
+          Important Dates ↓
+        </button>
+            </li>
+
+            <li class="nav-item col-12 col-md-auto">
+                <button class="nav-link w-100" data-bs-toggle="pill" data-bs-target="#submission">
+          Paper Submission ↓
+        </button>
+            </li>
+
+            <li class="nav-item col-12 col-md-auto">
+                <button class="nav-link w-100" data-bs-toggle="pill" data-bs-target="#guidelines">
+          Submission Guidelines ↓
+        </button>
+            </li>
+
+            <li class="nav-item col-12 col-md-auto">
+                <button class="nav-link w-100" data-bs-toggle="pill" data-bs-target="#publication">
+          Publication 2026 ↓
+        </button>
+            </li>
+
+        </ul>
+
+        <!-- Content -->
+        <div class="tab-content">
+
+            <!-- Important Dates -->
+            <div class="tab-pane fade show active" id="dates">
+                <div class="row g-3">
+
+                    <div class="col-12 col-md-6">
+                        <div class="date-box">
+                            <span>Papers submission Deadline</span>
+                            <span class="badge text-dark bg-warning">30 July 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="date-box">
+                            <span>Paper Acceptance</span>
+                            <span class="badge  text-dark bg-warning">30 September 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="date-box">
+                            <span>Registration</span>
+                            <span class="badge  text-dark bg-warning">Within week after acceptance</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="date-box">
+                            <span>Final Camera Ready</span>
+                            <span class="badge  text-dark bg-warning">Within week after acceptance</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="date-box">
+                            <span>Conference Dates</span>
+                            <span class="badge  text-dark bg-warning">30–31 October 2026</span>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-        </div>
-
-    </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="pt-5">
-
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 mb-3">
-                <h5 class="footer-title text-warning">Contact</h5>
-                <p>Engineering College, Bikaner</p>
-                <p>Email: info@ic3ia.in</p>
+            <!-- Submission -->
+            <div class="tab-pane fade" id="submission">
+                <div class="alert-box">
+                    Please Submit Your Paper using the following link
+                    <a href="#">https://cmt3.research.microsoft.com/AICTC2026</a>
+                    <a href="#" class="btn btn-orange">CLICK HERE</a>
+                </div>
             </div>
 
-            <div class="col-md-4 mb-3">
-                <h5 class="footer-title text-warning">Quick Links</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms</a></li>
-                </ul>
+            <!-- Guidelines -->
+            <div class="tab-pane fade" id="guidelines">
+                <p>Authors are kindly invited to submit their formatted full papers including results, tables, figures, and references.
+                </p>
+            </div>
+
+            <!-- Publication -->
+            <div class="tab-pane fade" id="publication">
+                <p>All accepted papers will be published in conference proceedings.</p>
             </div>
 
         </div>
     </div>
 
-    <div class="text-center bg-primary py-2">
-        © 2026 IC3IA
-    </div>
 
-</footer>
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container-fluid pb-3 mt-3" id="intLinkReviewProcess">
+        <div class="container">
+            <!--Review Process-->
+            <div class="row">
+                <div class="col-12 pb-3 col-md-6 pb-md-0">
+                    <div class="fs-2 fw-semibold text-center mb-4"> Review Process </div>
+                    <p>By submitting a paper to IC3IA-2026, the authors agree to the review process and understand that papers undergo a peer-review process. Manuscripts will be reviewed by qualified experts in the field selected by the Conference Committee,
+                        who will review the work and—if the submission gets accepted—the authors will have to submit a revised (“camera-ready”) copy.
+                    </p>
+                    <p>
+                        All papers are reviewed using a double-blind review process: authors declare their names and affiliations in the manuscript for the reviewers to see, but reviewers do not know each other’s identities, nor do the authors receive information about who has
+                        reviewed their manuscript.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 pb-md-0">
+                    <div>
+                        <img class="img-fluid" src="../images/Evaluation-Criteria-1.png">
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-AOS.init();
-</script>
+
+        <!--Partners-->
+        <div class="container py-5">
+            <div class="row g-4">
+
+                <!-- LEFT SECTION -->
+                <div class="col-lg-6 col-12">
+
+                    <!-- Heading -->
+                    <div class="text-center mb-4">
+                        <div class="title-line"></div>
+                        <h2 class="section-title">ASSOCIATES & SPONSORS</h2>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-2 col-4">
+                            <div class="sponsor-card">
+                                <img src="D:\XamppInstall\htdocs\ic3ia\images\hk.png" alt="">
+                                <div class="sponsor-text">Supporting Partner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SECTION -->
+                <div class="col-lg-6 col-12">
+
+                    <!-- Heading -->
+                    <h3 class="text-center section-title mb-4">
+                        PREVIOUS PROCEEDINGS
+                    </h3>
+
+                    <!-- Content -->
+                    <div class="proceeding-box text-center">
+                        <h5 class="mb-4 fw-bold">IC3IA 2025</h5>
+
+                        <div class="row justify-content-center g-3">
+                            <div class="col-6 col-md-4">
+                                <a href="https://link.springer.com/book/10.1007/978-981-96-7473-2" target="_blank">
+                                    <img src="../images/ic3ia2025.jpeg" class="book-img shadow img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- FOOTER -->
+        <footer id="foot" class="footer-section text-white pt-5">
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-4">
+
+                    <!-- About -->
+                    <!-- <div class="col">
+                  <h5 class="footer-title">About Conference</h5>
+                  <p class="footer-text">
+                      It offers a dynamic environment for learning, collaboration, and innovation,
+                      fostering cutting-edge research that addresses the complexities of modern
+                      computational challenges.
+                  </p>
+              </div> -->
+
+                    <!-- Contact 1 -->
+                    <div class="col">
+                        <h5 class="footer-title text-warning">Contact Us</h5>
+                        <p><strong>Dr. Vishal Gour</strong></p>
+                        <p><i class="fa fa-map-marker-alt"></i> Deptartment Of Computer Application,<br> Engineering College, Bikaner (Rajasthan)-India</p>
+                        <p><i class="fa fa-envelope"></i> dr.vishalgoar@gmail.com</p>
+                    </div>
+
+
+                    <!-- Contact 2 -->
+                    <div class="col">
+                        <h5 class="footer-title  text-warning">Contact Us</h5>
+                        <p><strong>Dr. Jyoti Gajrani</strong></p>
+                        <p><i class="fa fa-map-marker-alt"></i> Department of Computer Science Engineering</p>
+                        <p><i class="fa fa-phone"></i> Engineering College, Ajmer, India</p>
+                        <p><i class="fa fa-envelope"></i> jyotigajrani@ecajmer.ac.in</p>
+                    </div>
+
+                    <!-- Contact 3 -->
+                    <div class="col">
+                        <h5 class="footer-title text-warning">Contact Us</h5>
+                        <p><strong>Dr. Padma Joshi </strong></p>
+                        <p><i class="fa fa-map-marker-alt"></i>Department of Computer Science,<br> Shri Jain Girls PG College, Bikaner, India </p>
+                        <p><i class="fa fa-envelope"></i> padmajoshi0110@gmail.com</p>
+                    </div>
+
+
+                    <!-- Contact 3 -->
+                    <div class="col">
+                        <h5 class="footer-title text-warning">Contact Us</h5>
+                        <p><strong>Dr. Sonia Arora </strong></p>
+                        <p><i class="fa fa-map-marker-alt"></i>School of Computer Science in Emerging Technology,
+                            <br>Noida Institute of Engineering and Technology, Greater Noida, India. </p>
+                        <p><i class="fa fa-envelope"></i>soniasitm@gmail.com</p>
+                    </div>
+
+
+
+                    <!-- Menu -->
+                    <div class="col">
+                        <h5 class="footer-title text-warning">Menu</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Refund & Cancellation</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Publication Policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom text-center mt-4 py-2 bg-primary">
+                Copyright © 2026 IC3IA 2026 | Powered by PranyaEducation
+            </div>
+
+        </footer>
+
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- AOS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000, // animation speed
+                once: true // animate only once
+            });
+        </script>
 
 </body>
+
 </html>
