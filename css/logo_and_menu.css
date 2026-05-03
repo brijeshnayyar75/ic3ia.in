@@ -132,31 +132,32 @@
     li.nav-item {
         font-weight: bold;
     }
-    
-    .banner {
-        height: 500px;
-        background: url('your-image.jpg') no-repeat center center/cover;
-        position: relative;
-    }
-    /* Optional dark overlay for better text visibility */
-    
-    .banner::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-    }
-    
-    .banner {
-        height: 500px;
-        background: url('../images/hero.jfif') no-repeat center center/cover;
-    }
-    
-    .banner .container {
-        position: relative;
-        z-index: 2;
-    }
-    /* Logo and Menu CSS ENDs here */
+
+
+
+.banner {
+    height: 500px;
+    background: url('../images/hero.jfif') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
