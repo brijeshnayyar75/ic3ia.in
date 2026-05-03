@@ -132,7 +132,15 @@
     li.nav-item {
         font-weight: bold;
     }
-    
+
+
+    .banner {
+        height: 500px;
+        background: url('Your_image') no-repeat center center/cover;
+        position: relative;
+    }
+
+
     /* Optional dark overlay for better text visibility */
     
     .banner::before {
