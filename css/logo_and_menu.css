@@ -1,3 +1,40 @@
+/* ===== MOBILE FONT FIX ===== */
+@media (max-width: 768px) {
+
+    /* Headings */
+    h1 { font-size: 1.6rem !important; }
+    h2 { font-size: 1.4rem !important; }
+    h3 { font-size: 1.2rem !important; }
+
+    /* Paragraph text */
+    p {
+        font-size: 0.95rem !important;
+        line-height: 1.6;
+    }
+
+    /* Lists */
+    li {
+        font-size: 0.95rem;
+    }
+
+    /* Bootstrap font classes override */
+    .fs-2 { font-size: 1.3rem !important; }
+    .fs-3 { font-size: 1.2rem !important; }
+    .fs-5 { font-size: 1rem !important; }
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
 /* ===== GLOBAL ===== */
 body {
     font-family: 'Segoe UI', sans-serif;
