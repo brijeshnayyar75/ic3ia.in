@@ -1,3 +1,41 @@
+/*Hero Image*/
+
+.banner {
+    height: 500px;
+    background: url('./images/jaipurForts.png') no-repeat center center/cover;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .banner {
+        height: auto;
+        min-height: 60vh;
+        background-size: contain;   /* shows full image */
+        background-position: center;
+        padding: 40px 0;
+    }
+}
+
+/*Hero Image END*/
+
+/*Hero text*/
+
+@media (max-width: 768px) {
+    .banner .container {
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 1.4rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+}
+/*Hero text END*/
+
+
 /* ===== MOBILE FONT FIX ===== */
 @media (max-width: 768px) {
 
